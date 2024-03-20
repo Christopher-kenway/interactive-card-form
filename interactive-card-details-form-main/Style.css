@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500..700&display=swap');
+
+:root {
+    --ff-family: "Space Grotesk", sans-serif;
+    --fw-light: 200;
+    --fw-normal: 500;
+    --fw-bold: 600;
+
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.625rem;
+    --fs-900: 2.5rem;
+
+    --clr-primary: hsl(0, 0%, 100%);
+    --clr-Lightgrayish: hsl(270, 3%, 87%);
+    --clr-darkviolet:  hsl(278, 68%, 11%);
+
+    --clr-inputerr: hsl(0, 100%, 66%);
+    --clr-activeinput:  hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: var(--fs-500);
+    font-family: var(--ff-family);
+    font-weight: var(--fw-normal);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+  
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.bg-img{
+    overflow: hidden;
+    z-index: 0;
+    height: 100vh;
+    position: absolute;
+}
+
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: auto;
+    margin-inline: auto;
+    border: 1px solid red;
+    z-index: 1;
+    padding: 0 1rem;
+    gap: 10rem;  
+}

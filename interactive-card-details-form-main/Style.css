@@ -8,7 +8,7 @@
 
     --fs-400: 1rem;
     --fs-500: 1.125rem;
-    --fs-600: 1.625rem;
+    --fs-600: 1.925rem;
     --fs-900: 2.5rem;
 
     --clr-primary: hsl(0, 0%, 100%);
@@ -50,7 +50,7 @@ h3{
 
 .bg-img{
     overflow: hidden;
-    z-index: 0;
+    z-index: -99;
     height: 100vh;
     width: 30%;
     position: absolute;
@@ -63,28 +63,39 @@ h3{
     margin-block: auto;
     margin-inline: auto;
     border: 1px solid red;
-    z-index: 99;
-    padding: 0 1rem;
     gap: 10rem;  
 }
 
-.card-img{
+.cards{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(30, 255, 0);
+   
 }
 
-.card-img img{
-    max-width: 100%;
-    max-height: 100%;
+.card01{
+    display: flex;
+      width: 100%;
+}
+
+.bgcard{
+    object-fit: contain;
     z-index: -1;
     position: absolute;
 }
 
-.carddeets{
+.carddetails{
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 2px solid rgb(55, 0, 255);
+    width: 100%;
 }
+
+
 
 

@@ -8,6 +8,7 @@
 
     --fs-100: 0.72rem;
     --fs-200: 0.75rem;
+    --fs-300: 0.805rem;
     --fs-400: 1rem;
     --fs-500: 1.125rem;
     --fs-600: 1.725rem;
@@ -65,7 +66,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
     margin-top: 5rem;
 }
 
@@ -81,13 +81,13 @@ p{
 .card01{
     display: flex;
       width: 100%;
-      transform: translate(-14rem, -2rem);
+      transform: translate(-12rem, -2rem);
 }
 
 .bgcard{
     z-index: -1;
     position: absolute;
-    box-shadow: 0 0 90px 0 rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 90px 0 rgba(0, 0, 0, 0.2);
 }
 
 .carddetails{
@@ -124,8 +124,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(-8.5rem, 0);
-    border: 2px solid red;
+    transform: translate(-6.5rem, 0);
+  
     margin-top: 3rem;
 }
 
@@ -146,7 +146,7 @@ p{
 .cardform{
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
+
   justify-content: center;
   padding: 1rem 1rem;
 }
@@ -154,17 +154,39 @@ p{
 .label{
     font-size: var(--fs-100);
     font-weight: var(--fw-light);
-    margin-top: 1rem;
     color: var(--clr-activeinput);
     text-transform: uppercase;
     line-height: 2rem;
+    letter-spacing: .1rem;
 }
 
 .input {
     padding: 1rem;
    border: 1.2px solid var(--clr-Lightgrayish);
    height: 2rem;
-   border-radius: 5px;
-   font-size: var(--fs-200);
-   text-transform: uppercase;
+   border-radius: 7px;
+   font-size: var(--fs-300);
+   letter-spacing: .05rem;   
+}
+
+.cardform > span {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-light);
+    color: var(--clr-inputerr);
+    margin-top: 1rem;
+}
+
+.dateCvc{
+    border: 2px solid red;
+
+}
+.submit{
+    font-family: var(--ff-family);
+    background-color: var(--clr-darkviolet);
+    color: var(--clr-primary);
+    font-size: var(--fs-300);
+    line-height: 2.5rem;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
 }

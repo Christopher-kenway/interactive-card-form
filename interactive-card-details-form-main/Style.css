@@ -6,9 +6,11 @@
     --fw-normal: 500;
     --fw-bold: 600;
 
+    --fs-100: 0.72rem;
+    --fs-200: 0.75rem;
     --fs-400: 1rem;
     --fs-500: 1.125rem;
-    --fs-600: 1.925rem;
+    --fs-600: 1.725rem;
     --fs-900: 2.5rem;
 
     --clr-primary: hsl(0, 0%, 100%);
@@ -39,31 +41,32 @@ body{
 
 h1,
 h2,
-h3{
+h3,
+p{
     color: var(--clr-primary);
     font-size: var(--fs-500);
 }
+
 .container{
-    display: flex;
-    height: 100vh;
+   margin: 0 auto;
+   padding: 4rem;
+   max-width: 1200px;
 }
 
 .bg-img{
     overflow: hidden;
-    z-index: -99;
+    z-index: -1;
     height: 100vh;
-    width: 30%;
     position: absolute;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block: auto;
-    margin-inline: auto;
     border: 1px solid red;
-    gap: 10rem;  
+    margin-top: 5rem;
 }
 
 .cards{
@@ -71,31 +74,97 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(30, 255, 0);
+    gap: 3rem;
    
 }
 
 .card01{
     display: flex;
       width: 100%;
+      transform: translate(-14rem, -2rem);
 }
 
 .bgcard{
-    object-fit: contain;
     z-index: -1;
     position: absolute;
+    box-shadow: 0 0 90px 0 rgba(0, 0, 0, 0.2); 
 }
 
 .carddetails{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 2rem;
-    border: 2px solid rgb(55, 0, 255);
     width: 100%;
+    padding: 1rem 2rem;
 }
 
+.carddetails h1{
+    font-size: var(--fs-600);
+    font-weight: var(--fw-normal);
+    margin-inline: auto;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
 
+.cardbaseline{
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: -2rem;
+}
 
+.cardbaseline > h2, h3{
+    font-size: var(--fs-200);
+    font-weight: var(--fw-light);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
 
+.card02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-8.5rem, 0);
+    border: 2px solid red;
+    margin-top: 3rem;
+}
+
+.card02 > img{
+    z-index: -1;
+    position: absolute;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); 
+}
+
+.card02 > p{
+    font-size: var(--fs-400);
+    font-weight: var(--fw-light);
+    margin-top: 1rem;
+    z-index: 1;
+    transform: translate(8rem, 0); 
+}
+
+.cardform{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+
+.label{
+    font-size: var(--fs-100);
+    font-weight: var(--fw-light);
+    margin-top: 1rem;
+    color: var(--clr-activeinput);
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+.input {
+    padding: 1rem;
+   border: 1.2px solid var(--clr-Lightgrayish);
+   height: 2rem;
+   border-radius: 5px;
+   font-size: var(--fs-200);
+   text-transform: uppercase;
+}

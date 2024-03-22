@@ -42,16 +42,19 @@
         <input class="input" placeholder="e.g. 1234 5678 9123 0000" type="text" id="cardNumber" name="cardNumber" required>
         <span id="numberError" class="error"></span><br>
 
-        <div class="dateCvc">
-        
-      <div class="label" class="label" for="cvc">Exp. Date (MM/YY)</div><br>
-   <input class="input " placeholder="MM" type="text" id="MM"           name="month" required> 
+        <div class="datecvc">
+          <div class="mmyy">
+      <label class="label" class="label" for="expiration date">Exp. Date (MM/YY)</label><br>
+      <span>
+        <input class="input" placeholder="MM" type="text" id="MM" name="month" required> 
         <input class="input" placeholder="YY" type="text" id="YY" name="year" required><br>
-      
+      </span>
+      </div>
+      <div class="CVC">
         <label class="label" for="cardHolder">CVC</label><br>
         <input class="input" placeholder="e.g. 123" type="text" id="CVC" name="cvc" required>
         <span id="nameError" class="error"></span><br>
-     
+      </div>
       </div>
       <button type="submit" id="submit" class="submit">Confirm
       </button>

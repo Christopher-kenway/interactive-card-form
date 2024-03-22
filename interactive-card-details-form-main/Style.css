@@ -49,9 +49,11 @@ p{
 }
 
 .container{
-   margin: 0 auto;
+    margin-inline: auto;
+    margin-block: auto;
    padding: 4rem;
    max-width: 1200px;
+   
 }
 
 .bg-img{
@@ -82,6 +84,7 @@ p{
     display: flex;
       width: 100%;
       transform: translate(-12rem, -2rem);
+      position: relative;
 }
 
 .bgcard{
@@ -125,7 +128,7 @@ p{
     justify-content: center;
     align-items: center;
     transform: translate(-6.5rem, 0);
-  
+    position: relative;
     margin-top: 3rem;
 }
 
@@ -146,9 +149,9 @@ p{
 .cardform{
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   padding: 1rem 1rem;
+  width: 25rem;
 }
 
 .label{
@@ -176,10 +179,7 @@ p{
     margin-top: 1rem;
 }
 
-.dateCvc{
-    border: 2px solid red;
 
-}
 .submit{
     font-family: var(--ff-family);
     background-color: var(--clr-darkviolet);
@@ -189,4 +189,14 @@ p{
     border: none;
     margin-top: 1rem;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.datecvc{
+    display: flex;
+}
+
+.mmyy > span > input{
+    width: 40%;
+  
 }

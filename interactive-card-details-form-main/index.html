@@ -33,7 +33,7 @@
       </div>
     </div>
 
-      <form class="cardform" id="cardForm" action="#" method="post" onsubmit="">
+      <form class="cardform" id="cardForm" action="#" method="post" onsubmit="return ValidateCardDetails()">
         <label class="label" for="cardHolder">Cardholder Name</label>
         <input class="input" placeholder="e.g. Jane Appleseed" type="text" id="cardName" name="cardHolder" required>
         <span id="nameError" class="error"></span><br>

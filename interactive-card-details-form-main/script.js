@@ -22,5 +22,15 @@ function ValidateCardDetails(){
         isValid = false;
         console.log(nameError);
      }
+
+     //number validation
+     if (cardNumber === ""){
+      numberError.Error.textContent = "Card Number Required"
+      isValid = false;
+     } else if (isNaN(cardNumber)){
+      numberError.textContent = "Please enter a valid number";
+      isValid = false;
+     }
+     return isValid;
     
 }

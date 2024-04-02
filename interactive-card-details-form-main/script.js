@@ -24,13 +24,26 @@ function ValidateCardDetails(){
      }
 
      //number validation
-     if (cardNumber === ""){
+     if (cardNumber === "" || cardNumber == null){
       numberError.Error.textContent = "Card Number Required"
       isValid = false;
      } else if (isNaN(cardNumber)){
       numberError.textContent = "Please enter a valid number";
       isValid = false;
      }
-     return isValid;
-    
+
+    //month validation
+      if (monthExpire === ""){
+      monthError.textContent = "Month is Required";
+      isValid = false;
+      }
+      else if (isNaN(monthExpire)){
+      monthError.textContent = "Please enter a valid month";
+      isValid = false;
+      }
+      else if (monthExpire < 1 || monthExpire > 12){
+      monthError.textContent = "Please enter a valid month";
+      isValid = false;
+      }
+      
 }
